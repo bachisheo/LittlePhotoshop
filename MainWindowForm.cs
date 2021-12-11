@@ -26,6 +26,7 @@ namespace KGRastr
 
         private TransInfo brigthnessInfo;
         private TransInfo contrastInfo;
+        private TransInfo binatyInfo;
 
         public Rectangle _activeImageArea, _activeBoxArea;
         public Point zeroPoint = new Point(0, 0);
@@ -48,8 +49,15 @@ namespace KGRastr
             contrastInfo.Label = "Контрастность";
             contrastInfo.max = 1000;
             contrastInfo.min = 0;
-            contrastInfo.current = 1;
+            contrastInfo.current = 100;
             contrastInfo.getv = (int x) => (double) (x * 10)/ contrastInfo.max;
+            binatyInfo = new TransInfo();
+            binatyInfo.tr = new Binarization(1);
+            binatyInfo.Label = "Бинаризация";
+            binatyInfo.max = 255;
+            binatyInfo.min = 0;
+            binatyInfo.current = 168;
+            binatyInfo.getv = (int x) => x;
 
         }
 
@@ -123,9 +131,7 @@ namespace KGRastr
 
         private void binaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Transformation tr = new Binarization(128);
-            tr.Execute(_image, _activeImageArea);
-            Update();
+            TransformWindow(binatyInfo);
         }
 
         private void shadesOfGrayToolStripMenuItem_Click(object sender, EventArgs e)
@@ -212,9 +218,16 @@ namespace KGRastr
             TransformWindow(contrastInfo);
         }
 
-        public void transform(Transformation trans)
+        public void SaveTransformations()
         {
-            trans.Execute(_image,_activeImageArea);
+            _reserve.Dispose();
+            _reserve = new TrueBitmap(_image.Bitmap);
+            Update();
+        }
+        public void RollbackTransformations()
+        {
+            _image.Dispose();
+            _image = new TrueBitmap(_reserve.Bitmap);
             Update();
         }
         public void transformCopy(Transformation trans)

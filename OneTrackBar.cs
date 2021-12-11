@@ -25,14 +25,21 @@ namespace KGRastr
         {
             this.TransformationParametrTrackBar.Maximum = _info.max;
             this.TransformationParametrTrackBar.Minimum = _info.min;
-            this.TransformationParametrTrackBar.Value = _info.current;
+            ResetTrackBar();
             this.transformationParam.Text = _info.Label;
+            _info.tr.ChangeKoeff(_info.getv(_info.current));
+            _parent.transformCopy(_info.tr);
         }
 
+        private void ResetTrackBar()
+        {
+            this.TransformationParametrTrackBar.Value = _info.current;
+            ParametrValue.Text = _info.getv(this.TransformationParametrTrackBar.Value).ToString();
+        }
         private void TransformationParametrTrackBar_Scroll(object sender, EventArgs e)
         {
             double value = _info.getv(this.TransformationParametrTrackBar.Value);
-            this.ParametrValue.Text = ((int)value).ToString();
+            this.ParametrValue.Text = value.ToString();
             _info.tr.ChangeKoeff(value);
             _parent.transformCopy(_info.tr);
 
@@ -40,14 +47,14 @@ namespace KGRastr
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Yes;
-            this.Close();
+            ResetTrackBar();
+            _parent.SaveTransformations();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Cancel;
-            this.Close();
+            ResetTrackBar();
+            _parent.RollbackTransformations();
         }
     }
 }
