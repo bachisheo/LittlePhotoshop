@@ -164,6 +164,31 @@ namespace KGRastr
             return Color.Black;
         }
     }
+    public class UniformDistributionNoise : Transformation
+    {
+        private double _intensive;
+        private Random rand;
+        public void ChangeKoeff(double a)
+        {
+            _intensive = a;
+        }
+        public UniformDistributionNoise(double intensive)
+        {
+            _intensive = intensive;
+            rand = new Random();
+        }
+
+        private byte NoisedColor(byte channel)
+        {
+
+           // return (byte)Math.Clamp((int)(channel  + rand.NextBytes() * _intensive), 0, 255);
+           return 1;
+        }
+        public Color Transform(Color c)
+        {
+            return Color.FromArgb(NoisedColor(c.R), NoisedColor(c.G), NoisedColor(c.B));
+        }
+    }
     public class ShadowOfGray : Transformation
     {
 

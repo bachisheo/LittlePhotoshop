@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\kesa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kesa\\.nuget\\packages"
+    ]
+  }
+}

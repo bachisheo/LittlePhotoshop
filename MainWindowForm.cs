@@ -27,6 +27,7 @@ namespace KGRastr
         private TransInfo brigthnessInfo;
         private TransInfo contrastInfo;
         private TransInfo binatyInfo;
+        private TransInfo uniformNoiseInfo;
 
         public Rectangle _activeImageArea, _activeBoxArea;
         public Point zeroPoint = new Point(0, 0);
@@ -51,6 +52,7 @@ namespace KGRastr
             contrastInfo.min = 0;
             contrastInfo.current = 100;
             contrastInfo.getv = (int x) => (double) (x * 10)/ contrastInfo.max;
+            //
             binatyInfo = new TransInfo();
             binatyInfo.tr = new Binarization(1);
             binatyInfo.Label = "Бинаризация";
@@ -58,6 +60,14 @@ namespace KGRastr
             binatyInfo.min = 0;
             binatyInfo.current = 168;
             binatyInfo.getv = (int x) => x;
+            //
+            uniformNoiseInfo = new TransInfo();
+            uniformNoiseInfo.tr = new UniformDistributionNoise(1);
+            uniformNoiseInfo.Label = "Интенсивность шума";
+            uniformNoiseInfo.max = 100;
+            uniformNoiseInfo.min = 0;
+            uniformNoiseInfo.current = 0;
+            uniformNoiseInfo.getv = (int x) => (double)x / 100;
 
         }
 
@@ -73,8 +83,7 @@ namespace KGRastr
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            _contrastBaseValue = ContractTrackBar.Value;
-            ContrastValue.Text = ((float)ContractTrackBar.Value / 100).ToString();
+           
         }
 
         private void UploadImage(object sender, EventArgs e)
@@ -112,15 +121,8 @@ namespace KGRastr
                 Rastr.DrawBar(e.Graphics, _image, _activeImageArea);
         }
 
-        private void LightTrackBar_Scroll(object sender, EventArgs e)
-        {
-            LightValue.Text = LightTrackBar.Value.ToString();
-        }
+     
 
-        private void ContractTrackBar_Scroll(object sender, EventArgs e)
-        {
-            ContrastValue.Text = ((float)ContractTrackBar.Value / 100).ToString();
-        }
 
         private void RollbackChanges_Click(object sender, EventArgs e)
         {
@@ -218,6 +220,11 @@ namespace KGRastr
             TransformWindow(contrastInfo);
         }
 
+        private void UniformContributionNoiseButton_Click(object sender, EventArgs e)
+        {
+            TransformWindow(uniformNoiseInfo);
+        }
+
         public void SaveTransformations()
         {
             _reserve.Dispose();
@@ -237,18 +244,6 @@ namespace KGRastr
             trans.Execute(_image,_activeImageArea);
             Update();
         }
-        private void updateButton_Click(object sender, EventArgs e)
-        {
-            Transformation tr = new LightTransformation(Int32.Parse(LightValue.Text));
-            tr.Execute(_image, _activeImageArea);
-            LightTrackBar.Value = 0;
-            LightValue.Text = LightTrackBar.Value.ToString();
-            //
-            tr = new ContrastTransformation(Double.Parse(ContrastValue.Text));
-            tr.Execute(_image, _activeImageArea);
-            ContractTrackBar.Value = 100;
-            ContractTrackBar.Text = "1";
-            Update();
-        }
+    
     }
 }
