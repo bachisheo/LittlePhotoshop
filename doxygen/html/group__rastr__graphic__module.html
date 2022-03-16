@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>KGRastr: Обработка изображений</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">KGRastr
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Обработка изображений</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga394cce7f343bdba034088d2ef1a28a08"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga394cce7f343bdba034088d2ef1a28a08">KGRastr.Rastr.calcAverageBrightness</a> (Rectangle activeArea, TrueBitmap image)</td></tr>
+<tr class="memdesc:ga394cce7f343bdba034088d2ef1a28a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить среднюю яркость  <a href="group__rastr__graphic__module.html#ga394cce7f343bdba034088d2ef1a28a08">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga394cce7f343bdba034088d2ef1a28a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac597a8405d634cd22695fc71f2a71650"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#gac597a8405d634cd22695fc71f2a71650">KGRastr.Rastr.calcBrightness</a> (Color c)</td></tr>
+<tr class="memdesc:gac597a8405d634cd22695fc71f2a71650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить яркость цвета  <a href="group__rastr__graphic__module.html#gac597a8405d634cd22695fc71f2a71650">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac597a8405d634cd22695fc71f2a71650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75c8ddbe91b692eaef3be3365ceee10e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga75c8ddbe91b692eaef3be3365ceee10e">KGRastr.Rastr.DrawBar</a> (Graphics gr, TrueBitmap image, Rectangle activeArea)</td></tr>
+<tr class="memdesc:ga75c8ddbe91b692eaef3be3365ceee10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отобразить столбчатую диаграмму яркости<br  />
+Выводит на элемент экрана столбчатую диаграмму яркости, построенную для выделенной области изображения  <a href="group__rastr__graphic__module.html#ga75c8ddbe91b692eaef3be3365ceee10e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga75c8ddbe91b692eaef3be3365ceee10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52603a2c67c26875b5ff9d7710f8711a"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga52603a2c67c26875b5ff9d7710f8711a">KGRastr.Transformation.Transform</a> (Color c)</td></tr>
+<tr class="memdesc:ga52603a2c67c26875b5ff9d7710f8711a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применить фильтр к цвету  <a href="group__rastr__graphic__module.html#ga52603a2c67c26875b5ff9d7710f8711a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga52603a2c67c26875b5ff9d7710f8711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77afa2140069fce0df1aff5e13225085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga77afa2140069fce0df1aff5e13225085">KGRastr.Transformation.Execute</a> (TrueBitmap image, Rectangle area)</td></tr>
+<tr class="memdesc:ga77afa2140069fce0df1aff5e13225085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Последовательно применить фильтр к каждому пикселю выделенной области  <a href="group__rastr__graphic__module.html#ga77afa2140069fce0df1aff5e13225085">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga77afa2140069fce0df1aff5e13225085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga826b5f2f8df41a3f799f73beb246ec84"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga826b5f2f8df41a3f799f73beb246ec84">KGRastr.LightTransformation.Transform</a> (Color c)</td></tr>
+<tr class="memdesc:ga826b5f2f8df41a3f799f73beb246ec84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить яркость цвета  <a href="group__rastr__graphic__module.html#ga826b5f2f8df41a3f799f73beb246ec84">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga826b5f2f8df41a3f799f73beb246ec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5428450d5294cdef569af7644a4de95c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga5428450d5294cdef569af7644a4de95c">KGRastr.Binarization.Binarization</a> (int level)</td></tr>
+<tr class="memdesc:ga5428450d5294cdef569af7644a4de95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор фильтра бинаризации  <a href="group__rastr__graphic__module.html#ga5428450d5294cdef569af7644a4de95c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5428450d5294cdef569af7644a4de95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb7e0a81502d29f9e065fc4073bd8832"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#gabb7e0a81502d29f9e065fc4073bd8832">KGRastr.Binarization.Transform</a> (Color c)</td></tr>
+<tr class="memdesc:gabb7e0a81502d29f9e065fc4073bd8832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Бинаризировать цвет  <a href="group__rastr__graphic__module.html#gabb7e0a81502d29f9e065fc4073bd8832">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabb7e0a81502d29f9e065fc4073bd8832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3092093a67c6ca6ef853fc1329f696bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga3092093a67c6ca6ef853fc1329f696bf">KGRastr.ColoredBinarization.ColoredBinarization</a> (int level, Color LightColor, Color DarkColor)</td></tr>
+<tr class="memdesc:ga3092093a67c6ca6ef853fc1329f696bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор фильтра для цветной бинаризации <br  />
+ Данный фильтр определяет новое значение для цвета пикселя по формуле:  <a href="group__rastr__graphic__module.html#ga3092093a67c6ca6ef853fc1329f696bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3092093a67c6ca6ef853fc1329f696bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dfeaf9428528b22446b739a49a482b9"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rastr__graphic__module.html#ga7dfeaf9428528b22446b739a49a482b9">KGRastr.ColoredBinarization.Transform</a> (Color c)</td></tr>
+<tr class="memdesc:ga7dfeaf9428528b22446b739a49a482b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Бинаризировать цвет  <a href="group__rastr__graphic__module.html#ga7dfeaf9428528b22446b739a49a482b9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7dfeaf9428528b22446b739a49a482b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ga1f1c66efa11a7a7460639300f1ca5951"><td class="memItemLeft" align="right" valign="top"><a id="ga1f1c66efa11a7a7460639300f1ca5951" name="ga1f1c66efa11a7a7460639300f1ca5951"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>KGRastr.ColoredBinarization._level</b></td></tr>
+<tr class="memdesc:ga1f1c66efa11a7a7460639300f1ca5951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Порог бинаризации - уровень яркости, по которому бинаризуется изображение <br /></td></tr>
+<tr class="separator:ga1f1c66efa11a7a7460639300f1ca5951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a id="ga5428450d5294cdef569af7644a4de95c" name="ga5428450d5294cdef569af7644a4de95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5428450d5294cdef569af7644a4de95c">&#9670;&nbsp;</a></span>Binarization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KGRastr.Binarization.Binarization </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор фильтра бинаризации </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Порог бинаризации - уровень яркости, по которому бинаризуется изображение </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga394cce7f343bdba034088d2ef1a28a08" name="ga394cce7f343bdba034088d2ef1a28a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394cce7f343bdba034088d2ef1a28a08">&#9670;&nbsp;</a></span>calcAverageBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int KGRastr.Rastr.calcAverageBrightness </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle&#160;</td>
+          <td class="paramname"><em>activeArea</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TrueBitmap&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычислить среднюю яркость </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Обрабатываемое изображение </td></tr>
+    <tr><td class="paramname">activeArea</td><td>Обрабатываемая область изображения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Величина средней яркости рассматриваемой области </dd></dl>
+
+</div>
+</div>
+<a id="gac597a8405d634cd22695fc71f2a71650" name="gac597a8405d634cd22695fc71f2a71650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac597a8405d634cd22695fc71f2a71650">&#9670;&nbsp;</a></span>calcBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int KGRastr.Rastr.calcBrightness </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычислить яркость цвета </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Цвет </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Яркость <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ga3092093a67c6ca6ef853fc1329f696bf" name="ga3092093a67c6ca6ef853fc1329f696bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3092093a67c6ca6ef853fc1329f696bf">&#9670;&nbsp;</a></span>ColoredBinarization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KGRastr.ColoredBinarization.ColoredBinarization </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>LightColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>DarkColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор фильтра для цветной бинаризации <br  />
+ Данный фильтр определяет новое значение для цвета пикселя по формуле: </p>
+<p class="formulaDsp">
+\[ newColor(x) = \left\{ \begin{array}{lr} LightColor &amp; \text{if } l(x) &gt; limit,\\ DarkColor &amp; \text{if } l(x) &lt;= limit. \\ \end{array} \right.\\ \]
+</p>
+<p >где:<br  />
+newColor(x) - новый цвет,<br  />
+limit - порог бинаризации,<br  />
+x - исходный цвет пикселя,<br  />
+l(x) - яркость цвета х,<br  />
+LightColor - цвет точек, яркость которых выше порога,<br  />
+DarkColor - цвет точек, яркость которых ниже или равна порогу бинаризации.<br  />
+Пример работы фильтра (порог бинаризации 168): </p><div class="image">
+<img src="BinExample.png" alt="" width="50%"/>
+</div>
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Порог бинаризации </td></tr>
+    <tr><td class="paramname">LightColor</td><td>Цвет точек, яркость которых выше порога </td></tr>
+    <tr><td class="paramname">DarkColor</td><td>Цвет точек, яркость которых ниже или равна порогу бинаризации </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga75c8ddbe91b692eaef3be3365ceee10e" name="ga75c8ddbe91b692eaef3be3365ceee10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75c8ddbe91b692eaef3be3365ceee10e">&#9670;&nbsp;</a></span>DrawBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void KGRastr.Rastr.DrawBar </td>
+          <td>(</td>
+          <td class="paramtype">Graphics&#160;</td>
+          <td class="paramname"><em>gr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TrueBitmap&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rectangle&#160;</td>
+          <td class="paramname"><em>activeArea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отобразить столбчатую диаграмму яркости<br  />
+Выводит на элемент экрана столбчатую диаграмму яркости, построенную для выделенной области изображения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Обрабатываемое изображение </td></tr>
+    <tr><td class="paramname">activeArea</td><td>Обрабатываемая область изображения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Величина средней яркости рассматриваемой области </dd></dl>
+
+</div>
+</div>
+<a id="ga77afa2140069fce0df1aff5e13225085" name="ga77afa2140069fce0df1aff5e13225085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77afa2140069fce0df1aff5e13225085">&#9670;&nbsp;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KGRastr.Transformation.Execute </td>
+          <td>(</td>
+          <td class="paramtype">TrueBitmap&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rectangle&#160;</td>
+          <td class="paramname"><em>area</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Последовательно применить фильтр к каждому пикселю выделенной области </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Изменяемое изображение </td></tr>
+    <tr><td class="paramname">activeArea</td><td>Обрабатываемая область изображения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga52603a2c67c26875b5ff9d7710f8711a" name="ga52603a2c67c26875b5ff9d7710f8711a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52603a2c67c26875b5ff9d7710f8711a">&#9670;&nbsp;</a></span>Transform() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color KGRastr.Transformation.Transform </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Применить фильтр к цвету </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Исходный цвет </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет после применения фильтра </dd></dl>
+
+<p>Замещается в <a class="el" href="group__rastr__graphic__module.html#ga826b5f2f8df41a3f799f73beb246ec84">KGRastr.LightTransformation</a>, <a class="el" href="group__rastr__graphic__module.html#gabb7e0a81502d29f9e065fc4073bd8832">KGRastr.Binarization</a> и <a class="el" href="group__rastr__graphic__module.html#ga7dfeaf9428528b22446b739a49a482b9">KGRastr.ColoredBinarization</a>.</p>
+
+</div>
+</div>
+<a id="ga826b5f2f8df41a3f799f73beb246ec84" name="ga826b5f2f8df41a3f799f73beb246ec84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga826b5f2f8df41a3f799f73beb246ec84">&#9670;&nbsp;</a></span>Transform() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color KGRastr.LightTransformation.Transform </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменить яркость цвета </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Исходный цвет </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет после применения фильтра </dd></dl>
+
+<p>Замещает <a class="el" href="group__rastr__graphic__module.html#ga52603a2c67c26875b5ff9d7710f8711a">KGRastr.Transformation</a>.</p>
+
+</div>
+</div>
+<a id="gabb7e0a81502d29f9e065fc4073bd8832" name="gabb7e0a81502d29f9e065fc4073bd8832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb7e0a81502d29f9e065fc4073bd8832">&#9670;&nbsp;</a></span>Transform() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color KGRastr.Binarization.Transform </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Бинаризировать цвет </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Исходный цвет </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет после применения фильтра </dd></dl>
+
+<p>Замещает <a class="el" href="group__rastr__graphic__module.html#ga52603a2c67c26875b5ff9d7710f8711a">KGRastr.Transformation</a>.</p>
+
+</div>
+</div>
+<a id="ga7dfeaf9428528b22446b739a49a482b9" name="ga7dfeaf9428528b22446b739a49a482b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7dfeaf9428528b22446b739a49a482b9">&#9670;&nbsp;</a></span>Transform() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color KGRastr.ColoredBinarization.Transform </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Бинаризировать цвет </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Исходный цвет </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет после применения фильтра </dd></dl>
+
+<p>Замещает <a class="el" href="group__rastr__graphic__module.html#ga52603a2c67c26875b5ff9d7710f8711a">KGRastr.Transformation</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

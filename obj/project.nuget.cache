@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Xlmti1Hc+NhtQ7P8SR05KShBh6mAA/kCWlKB4WAwdgnj1pkbrOcjjgdjEEu6bGbNYKyaJJ3DGj2XmQHN+yKaBQ==",
+  "dgSpecHash": "EmXLG1vMInKhaOReoWR/PvDI4/E8PGKnLjyLi0+g7Vyri0/Kn1q5ULEngqkeHYDdqxwD01fR60uRYwt7/vmSSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kesa\\source\\repos\\KGRastr\\KGRastr.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kesa\\.nuget\\packages\\doxygen\\1.8.14\\doxygen.1.8.14.nupkg.sha512"
+  ],
   "logs": []
 }

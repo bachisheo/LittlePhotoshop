@@ -1,0 +1,248 @@
+\hypertarget{group__rastr__graphic__module}{}\doxysubsection{Обработка изображений}
+\label{group__rastr__graphic__module}\index{Обработка изображений@{Обработка изображений}}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{group__rastr__graphic__module_ga394cce7f343bdba034088d2ef1a28a08}{KGRastr.\+Rastr.\+calc\+Average\+Brightness}} (Rectangle active\+Area, True\+Bitmap image)
+\begin{DoxyCompactList}\small\item\em Вычислить среднюю яркость \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{group__rastr__graphic__module_gac597a8405d634cd22695fc71f2a71650}{KGRastr.\+Rastr.\+calc\+Brightness}} (Color c)
+\begin{DoxyCompactList}\small\item\em Вычислить яркость цвета \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group__rastr__graphic__module_ga75c8ddbe91b692eaef3be3365ceee10e}{KGRastr.\+Rastr.\+Draw\+Bar}} (Graphics gr, True\+Bitmap image, Rectangle active\+Area)
+\begin{DoxyCompactList}\small\item\em Отобразить столбчатую диаграмму яркости~\newline
+Выводит на элемент экрана столбчатую диаграмму яркости, построенную для выделенной области изображения \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}{KGRastr.\+Transformation.\+Transform}} (Color c)
+\begin{DoxyCompactList}\small\item\em Применить фильтр к цвету \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rastr__graphic__module_ga77afa2140069fce0df1aff5e13225085}{KGRastr.\+Transformation.\+Execute}} (True\+Bitmap image, Rectangle area)
+\begin{DoxyCompactList}\small\item\em Последовательно применить фильтр к каждому пикселю выделенной области \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{group__rastr__graphic__module_ga826b5f2f8df41a3f799f73beb246ec84}{KGRastr.\+Light\+Transformation.\+Transform}} (Color c)
+\begin{DoxyCompactList}\small\item\em Изменить яркость цвета \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__rastr__graphic__module_ga5428450d5294cdef569af7644a4de95c}{KGRastr.\+Binarization.\+Binarization}} (int level)
+\begin{DoxyCompactList}\small\item\em Конструктор фильтра бинаризации \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{group__rastr__graphic__module_gabb7e0a81502d29f9e065fc4073bd8832}{KGRastr.\+Binarization.\+Transform}} (Color c)
+\begin{DoxyCompactList}\small\item\em Бинаризировать цвет \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__rastr__graphic__module_ga3092093a67c6ca6ef853fc1329f696bf}{KGRastr.\+Colored\+Binarization.\+Colored\+Binarization}} (int level, Color Light\+Color, Color Dark\+Color)
+\begin{DoxyCompactList}\small\item\em Конструктор фильтра для цветной бинаризации ~\newline
+ Данный фильтр определяет новое значение для цвета пикселя по формуле\+: \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{group__rastr__graphic__module_ga7dfeaf9428528b22446b739a49a482b9}{KGRastr.\+Colored\+Binarization.\+Transform}} (Color c)
+\begin{DoxyCompactList}\small\item\em Бинаризировать цвет \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rastr__graphic__module_ga1f1c66efa11a7a7460639300f1ca5951}\label{group__rastr__graphic__module_ga1f1c66efa11a7a7460639300f1ca5951}} 
+int {\bfseries KGRastr.\+Colored\+Binarization.\+\_\+level}
+\begin{DoxyCompactList}\small\item\em Порог бинаризации -\/ уровень яркости, по которому бинаризуется изображение \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Подробное описание}
+
+
+\doxysubsubsection{Функции}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga5428450d5294cdef569af7644a4de95c}\label{group__rastr__graphic__module_ga5428450d5294cdef569af7644a4de95c}} 
+\index{Обработка изображений@{Обработка изображений}!Binarization@{Binarization}}
+\index{Binarization@{Binarization}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Binarization()}{Binarization()}}
+{\footnotesize\ttfamily KGRastr.\+Binarization.\+Binarization (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Конструктор фильтра бинаризации 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em level} & Порог бинаризации -\/ уровень яркости, по которому бинаризуется изображение \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga394cce7f343bdba034088d2ef1a28a08}\label{group__rastr__graphic__module_ga394cce7f343bdba034088d2ef1a28a08}} 
+\index{Обработка изображений@{Обработка изображений}!calcAverageBrightness@{calcAverageBrightness}}
+\index{calcAverageBrightness@{calcAverageBrightness}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{calcAverageBrightness()}{calcAverageBrightness()}}
+{\footnotesize\ttfamily static int KGRastr.\+Rastr.\+calc\+Average\+Brightness (\begin{DoxyParamCaption}\item[{Rectangle}]{active\+Area,  }\item[{True\+Bitmap}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычислить среднюю яркость 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em image} & Обрабатываемое изображение \\
+\hline
+{\em active\+Area} & Обрабатываемая область изображения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Величина средней яркости рассматриваемой области 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rastr__graphic__module_gac597a8405d634cd22695fc71f2a71650}\label{group__rastr__graphic__module_gac597a8405d634cd22695fc71f2a71650}} 
+\index{Обработка изображений@{Обработка изображений}!calcBrightness@{calcBrightness}}
+\index{calcBrightness@{calcBrightness}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{calcBrightness()}{calcBrightness()}}
+{\footnotesize\ttfamily static int KGRastr.\+Rastr.\+calc\+Brightness (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычислить яркость цвета 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Яркость ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga3092093a67c6ca6ef853fc1329f696bf}\label{group__rastr__graphic__module_ga3092093a67c6ca6ef853fc1329f696bf}} 
+\index{Обработка изображений@{Обработка изображений}!ColoredBinarization@{ColoredBinarization}}
+\index{ColoredBinarization@{ColoredBinarization}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{ColoredBinarization()}{ColoredBinarization()}}
+{\footnotesize\ttfamily KGRastr.\+Colored\+Binarization.\+Colored\+Binarization (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{Color}]{Light\+Color,  }\item[{Color}]{Dark\+Color }\end{DoxyParamCaption})}
+
+
+
+Конструктор фильтра для цветной бинаризации ~\newline
+ Данный фильтр определяет новое значение для цвета пикселя по формуле\+: 
+
+\[ newColor(x) = \left\{ \begin{array}{lr} LightColor & \text{if } l(x) > limit,\\ DarkColor & \text{if } l(x) <= limit. \\ \end{array} \right.\\ \]
+
+где\+:~\newline
+new\+Color(x) -\/ новый цвет,~\newline
+limit -\/ порог бинаризации,~\newline
+x -\/ исходный цвет пикселя,~\newline
+l(x) -\/ яркость цвета х,~\newline
+Light\+Color -\/ цвет точек, яркость которых выше порога,~\newline
+Dark\+Color -\/ цвет точек, яркость которых ниже или равна порогу бинаризации.~\newline
+Пример работы фильтра (порог бинаризации 168)\+:  
+\begin{DoxyParams}{Аргументы}
+{\em level} & Порог бинаризации \\
+\hline
+{\em Light\+Color} & Цвет точек, яркость которых выше порога \\
+\hline
+{\em Dark\+Color} & Цвет точек, яркость которых ниже или равна порогу бинаризации \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga75c8ddbe91b692eaef3be3365ceee10e}\label{group__rastr__graphic__module_ga75c8ddbe91b692eaef3be3365ceee10e}} 
+\index{Обработка изображений@{Обработка изображений}!DrawBar@{DrawBar}}
+\index{DrawBar@{DrawBar}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{DrawBar()}{DrawBar()}}
+{\footnotesize\ttfamily static void KGRastr.\+Rastr.\+Draw\+Bar (\begin{DoxyParamCaption}\item[{Graphics}]{gr,  }\item[{True\+Bitmap}]{image,  }\item[{Rectangle}]{active\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Отобразить столбчатую диаграмму яркости~\newline
+Выводит на элемент экрана столбчатую диаграмму яркости, построенную для выделенной области изображения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em image} & Обрабатываемое изображение \\
+\hline
+{\em active\+Area} & Обрабатываемая область изображения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Величина средней яркости рассматриваемой области 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga77afa2140069fce0df1aff5e13225085}\label{group__rastr__graphic__module_ga77afa2140069fce0df1aff5e13225085}} 
+\index{Обработка изображений@{Обработка изображений}!Execute@{Execute}}
+\index{Execute@{Execute}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void KGRastr.\+Transformation.\+Execute (\begin{DoxyParamCaption}\item[{True\+Bitmap}]{image,  }\item[{Rectangle}]{area }\end{DoxyParamCaption})}
+
+
+
+Последовательно применить фильтр к каждому пикселю выделенной области 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em image} & Изменяемое изображение \\
+\hline
+{\em active\+Area} & Обрабатываемая область изображения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}\label{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}} 
+\index{Обработка изображений@{Обработка изображений}!Transform@{Transform}}
+\index{Transform@{Transform}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Color KGRastr.\+Transformation.\+Transform (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Применить фильтр к цвету 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Исходный цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Цвет после применения фильтра 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{group__rastr__graphic__module_ga826b5f2f8df41a3f799f73beb246ec84}{KGRastr.\+Light\+Transformation}}, \mbox{\hyperlink{group__rastr__graphic__module_gabb7e0a81502d29f9e065fc4073bd8832}{KGRastr.\+Binarization}} и \mbox{\hyperlink{group__rastr__graphic__module_ga7dfeaf9428528b22446b739a49a482b9}{KGRastr.\+Colored\+Binarization}}.
+
+\mbox{\Hypertarget{group__rastr__graphic__module_ga826b5f2f8df41a3f799f73beb246ec84}\label{group__rastr__graphic__module_ga826b5f2f8df41a3f799f73beb246ec84}} 
+\index{Обработка изображений@{Обработка изображений}!Transform@{Transform}}
+\index{Transform@{Transform}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Color KGRastr.\+Light\+Transformation.\+Transform (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Изменить яркость цвета 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Исходный цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Цвет после применения фильтра 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}{KGRastr.\+Transformation}}.
+
+\mbox{\Hypertarget{group__rastr__graphic__module_gabb7e0a81502d29f9e065fc4073bd8832}\label{group__rastr__graphic__module_gabb7e0a81502d29f9e065fc4073bd8832}} 
+\index{Обработка изображений@{Обработка изображений}!Transform@{Transform}}
+\index{Transform@{Transform}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Color KGRastr.\+Binarization.\+Transform (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Бинаризировать цвет 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Исходный цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Цвет после применения фильтра 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}{KGRastr.\+Transformation}}.
+
+\mbox{\Hypertarget{group__rastr__graphic__module_ga7dfeaf9428528b22446b739a49a482b9}\label{group__rastr__graphic__module_ga7dfeaf9428528b22446b739a49a482b9}} 
+\index{Обработка изображений@{Обработка изображений}!Transform@{Transform}}
+\index{Transform@{Transform}!Обработка изображений@{Обработка изображений}}
+\doxyparagraph{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Color KGRastr.\+Colored\+Binarization.\+Transform (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Бинаризировать цвет 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Исходный цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Цвет после применения фильтра 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{group__rastr__graphic__module_ga52603a2c67c26875b5ff9d7710f8711a}{KGRastr.\+Transformation}}.
+

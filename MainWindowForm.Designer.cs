@@ -48,6 +48,9 @@ namespace KGRastr
             this.ImageBox = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.зернистостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.царапиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.частицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.histogramBox)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -142,10 +145,14 @@ namespace KGRastr
             // noiseToolStripMenuItem
             // 
             this.noiseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.UniformContributionNoiseButton});
+            this.UniformContributionNoiseButton,
+            this.зернистостьToolStripMenuItem,
+            this.царапиныToolStripMenuItem,
+            this.частицыToolStripMenuItem});
             this.noiseToolStripMenuItem.Name = "noiseToolStripMenuItem";
-            this.noiseToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.noiseToolStripMenuItem.Text = "Noise";
+            this.noiseToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.noiseToolStripMenuItem.Text = "Шум";
+            this.noiseToolStripMenuItem.Click += new System.EventHandler(this.noiseToolStripMenuItem_Click);
             // 
             // UniformContributionNoiseButton
             // 
@@ -203,6 +210,24 @@ namespace KGRastr
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
+            // зернистостьToolStripMenuItem
+            // 
+            this.зернистостьToolStripMenuItem.Name = "зернистостьToolStripMenuItem";
+            this.зернистостьToolStripMenuItem.Size = new System.Drawing.Size(304, 26);
+            this.зернистостьToolStripMenuItem.Text = "Зернистость";
+            // 
+            // царапиныToolStripMenuItem
+            // 
+            this.царапиныToolStripMenuItem.Name = "царапиныToolStripMenuItem";
+            this.царапиныToolStripMenuItem.Size = new System.Drawing.Size(304, 26);
+            this.царапиныToolStripMenuItem.Text = "Царапины";
+            // 
+            // частицыToolStripMenuItem
+            // 
+            this.частицыToolStripMenuItem.Name = "частицыToolStripMenuItem";
+            this.частицыToolStripMenuItem.Size = new System.Drawing.Size(304, 26);
+            this.частицыToolStripMenuItem.Text = "Частицы";
+            // 
             // MainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -248,6 +273,9 @@ namespace KGRastr
         private System.Windows.Forms.ToolStripMenuItem constrasrToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem noiseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem UniformContributionNoiseButton;
+        private System.Windows.Forms.ToolStripMenuItem зернистостьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem царапиныToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem частицыToolStripMenuItem;
     }
 }
 

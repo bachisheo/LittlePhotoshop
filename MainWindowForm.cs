@@ -225,6 +225,11 @@ namespace KGRastr
             TransformWindow(uniformNoiseInfo);
         }
 
+        private void noiseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void SaveTransformations()
         {
             _reserve.Dispose();

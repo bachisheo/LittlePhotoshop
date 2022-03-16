@@ -1,0 +1,5 @@
+<map id="KGRastr.Binarization" name="KGRastr.Binarization">
+<area shape="rect" id="node1" title="Фильтр для черно&#45;белой бинаризации изображения" alt="" coords="11,315,155,421"/>
+<area shape="rect" id="node2" href="$class_k_g_rastr_1_1_colored_binarization.html" title="Фильтр для бинаризации изображения в произвольных цветах" alt="" coords="5,175,160,267"/>
+<area shape="rect" id="node3" href="$interface_k_g_rastr_1_1_transformation.html" title="Интерфейс для преобразования изображений" alt="" coords="25,5,140,127"/>
+</map>
